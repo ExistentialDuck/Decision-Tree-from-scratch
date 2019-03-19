@@ -1,0 +1,11 @@
+﻿Problem 1a and 1b:
+
+I created a csv file representing the event space of the possible truth values given different values for the three variables. I then built a decision tree using the entirety of the dataset for training and constructed a visualization of the tree.
+
+Problem 2:
+
+I constructed a one hot encoded version of the dataset as a csv and assigned the column a1 to a new column titled ‘A’ and column a2 to a new column titled ‘B’. I then constructed a decision tree just using the a2 feature and created a visualization for it. The entropy values listed in the nodes of the decision tree were used to calculate the overall entropy of the dataset, as well as entropy for the true or false values specifically within the a2 feature column.
+
+Problem 3:
+
+I seperated the data into different variables for different levels of training in order to develop a test curve. I then created a series of functions specific to dataframes in order to implement an information gain ID3 like decision tree. In the best split function, I specified a criteria of the nodes stopping with a depth of 15, as I had seen that worked out well previously when using a scikit learn decision tree development kit. I then formatted tables according to the true, false, and total values outputted. Using the values in the table, I was able to calculate an overall error for each level of training, thus providing me with the necessary information to construct a test curve. 
